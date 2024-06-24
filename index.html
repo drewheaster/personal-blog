@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');</style>
+    <title>Coding Blog</title>
+</head>
+
+    <body>
+
+        <div class="theme-button"></div>
+        
+        <section class="title-section">
+            <div>
+                <h1 class="main-title">Programmer's<br>Block</h1>
+                <p class="slogan">Where developers come to debug...</p>
+            </div>
+        </section>
+
+        <section class="writing-container">
+            <form id="blog-post-form">
+                <div class="new-post-header">
+                    <input placeholder="Username" id="username" required>
+                    <input placeholder="Title" id="blog-title" required>
+                </div>
+                <textarea placeholder="What have you been working on/need help with?" id="post-content" required></textarea>
+                <button class="submit-post">Submit</button>
+            </form>
+        </section>
+
+        <section class="blog-post-container">
+
+            <i id='back-btn' class="fa-solid fa-left-long"></i>
+
+            <section class="blog-post-section">
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Test Title</h2>
+                    <p class="blog-post-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <footer class="blog-post-footer">~ Username</footer>
+                </div>
+                <div class="blog-post"></div>
+                <div class="blog-post"></div>
+                <div class="blog-post"></div>
+                <div class="blog-post"></div>
+                <div class="blog-post"></div>
+                <div class="blog-post"></div>
+            </section>
+
+            <footer class="footer"></footer>
+             
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <script src="./assets/js/form.js"></script>
+        <script src="https://kit.fontawesome.com/11a7843a2d.js" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
