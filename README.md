@@ -10,4 +10,6 @@ If you'd like, you can enter into the dev tools section by pressing 'F12' and yo
 
 If you want to create a new post, simply press the back arrow to get back to the main page! Also, if you prefer a darker theme, just click the toggle switch on the top right of the page. 
 
+[Click here to check out the blog!](https://drewheaster.github.io/personal-blog/)
+
 Happy coding!
