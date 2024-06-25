@@ -30,6 +30,8 @@ form {
     align-items: center;
 }
 
+/* This is the button for switching between themes */
+
 .theme-switch {
     position: absolute;
     top: 2rem;
@@ -85,8 +87,9 @@ input:checked + .slider:before {
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 3rem;
-  }
+}
 
+/* left section with website title */
 .title-section {
     background-color: var(--light-primary);
     height: 100vh;
@@ -119,7 +122,7 @@ input:checked + .slider:before {
     margin-top: 1rem;
 }
 
-/* switch */
+/* blog-creating section */
 .writing-container {
     height: 100vh;
     width: 75%;
@@ -196,7 +199,7 @@ input:checked + .slider:before {
 }
 
 
-/* switch */
+/* blog page rendered after submiting post */
 .blog-post-container {
     width: 75%;
     height: 100vh;
@@ -266,6 +269,7 @@ input:checked + .slider:before {
     z-index: 1001;
 }
 
+/* footer with link to personal portfolio */
 .footer {
     width: 100%;
     height: 4%;
@@ -291,6 +295,7 @@ input:checked + .slider:before {
     transition: .4s;
 }
 
+/* extra dark-theme classes */
 .dark {
     background-color: var(--dark-primary);
     -webkit-transition: .4s;

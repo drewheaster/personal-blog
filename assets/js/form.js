@@ -20,6 +20,7 @@ function handleFormSubmit(event) {
     const blogTitle = $("input[id='blog-title']");
     const blogContent = $("textarea[id='post-content']");
 
+    // just extra precaution for requiring that the text fields have data. there is a "required" attribute on them already in CSS
     if (!blogContent) {
         console.log('Must include username, title, and content in order to publish')
         return;
@@ -45,6 +46,7 @@ function handleFormSubmit(event) {
 
     blogSection.empty();
 
+    // creating each blog post dynamically on the posts page
     newBlogPosts.forEach(post => {
         const blogPostItem = `
         <div class="blog-post">
@@ -59,6 +61,7 @@ function handleFormSubmit(event) {
 
 blogPost.on('submit', handleFormSubmit)
 
+// this is the functionality for the back button
 function handleReturnToMain (event) {
     event.preventDefault();
 
@@ -68,6 +71,7 @@ function handleReturnToMain (event) {
 
 backButton.on('click', handleReturnToMain)
 
+// checking for themes in each section
 themeButton.on("click", function() {
     if ($(".title-section").hasClass("dark")) {
         $(".title-section").removeClass("dark");
