@@ -3,6 +3,7 @@ const backButton = $('#back-btn');
 const mainPage = $('section[class="writing-container"]');
 const blogPage = $('section[class="blog-post-container"]');
 const blogSection = $('section[class="blog-post-section"]');
+const themeButton = $('input[id="dark-light-mode-btn"]');
 
 let posts = [];
 
@@ -59,8 +60,33 @@ function handleFormSubmit(event) {
 blogPost.on('submit', handleFormSubmit)
 
 function handleReturnToMain (event) {
-    mainPage.show();
+    event.preventDefault();
+
     blogPage.hide();
+    mainPage.show();
 }
 
 backButton.on('click', handleReturnToMain)
+
+themeButton.on("click", function() {
+    if ($(".title-section").hasClass("dark")) {
+        $(".title-section").removeClass("dark");
+    } else {
+        $(".title-section").addClass("dark")
+    }
+    if ($(".writing-container").hasClass("secondary-dark")) {
+        $(".writing-container").removeClass("secondary-dark");
+    } else {
+        $(".writing-container").addClass("secondary-dark")
+    }
+    if ($(".blog-post-container").hasClass("secondary-dark")) {
+        $(".blog-post-container").removeClass("secondary-dark");
+    } else {
+        $(".blog-post-container").addClass("secondary-dark")
+    }
+    if ($(".footer-title").hasClass("text-dark")) {
+        $(".footer-title").removeClass("text-dark");
+    } else {
+        $(".footer-title").addClass("text-dark")
+    }
+})

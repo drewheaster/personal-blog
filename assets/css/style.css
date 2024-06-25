@@ -30,7 +30,7 @@ form {
     align-items: center;
 }
 
-.theme-button {
+.theme-switch {
     position: absolute;
     top: 2rem;
     right: 2rem;
@@ -38,7 +38,54 @@ form {
     width: 4rem;
     border-radius: 2rem;
     border: 2px solid var(--light-primary);
+    z-index: 1000;
 }
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+input:checked + .slider {
+    background-color: var(--light-primary);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--light-primary);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 3rem;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 3rem;
+  }
 
 .title-section {
     background-color: var(--light-primary);
@@ -49,6 +96,8 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 .title-section div {
@@ -78,6 +127,8 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 .new-post-header {
@@ -153,6 +204,8 @@ form {
     display: none;
     flex-direction: column;
     align-items: center;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 .blog-post-section {
@@ -173,6 +226,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
 }
 
 .blog-post-title {
@@ -209,6 +263,7 @@ form {
     left: 2rem;
     color: var(--light-primary);
     cursor: pointer;
+    z-index: 1001;
 }
 
 .footer {
@@ -226,8 +281,32 @@ form {
 
 .footer-title {
     color: var(--light-primary);
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 .footer-title:visited {
     color: var(--light-primary);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.dark {
+    background-color: var(--dark-primary);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.secondary-dark {
+    background-color: var(--dark-secondary);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.text-dark {
+    color: white;
+}
+
+.text-dark:visited {
+    color: white;
 }
